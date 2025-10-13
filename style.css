@@ -51,8 +51,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .body-container {
-    background-image: url('bg.png');
+    /*background-image: url('bg.png');*/
     min-height: 100vh;
+    background-color: #F4F3EE;
 }
 
 .container {
@@ -65,8 +66,8 @@ section {
 }
 
 section .infos {
-    /*background-color: var(--cdark);*/
-    padding: 7px 20px 7px 20px;
+    background-color: var(--cdark);
+    padding: 10px 20px 10px 20px;
     border-bottom: 1px solid var(--grlig);
 }
 
@@ -160,8 +161,11 @@ section .infos .top {
 
 .nav-cont {
     border-bottom: 1px solid var(--grlig);
-    background-color: var(--light);
+    background-color: #FF8F9C;
     width: 100%;
+    max-width: 460px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 2px;
 }
 .nav {
     margin: 0;
@@ -183,10 +187,10 @@ section .infos .top {
 }
 .nav li a:hover {
   text-decoration:none;
-  color: var(--cprim);
+  color: var(--light);
 }
 .nav li:hover {
-    background-color: rgba(235,233,240);
+    background-color: var(--cseco);
 }
 
 a.link {
