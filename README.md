@@ -1,2 +1,2 @@
 # landing-page-store
-html/css : a web responsive page of landing store using flex and grid 
+This project is a fully responsive landing page for an online store, built entirely with HTML and pure CSS. It showcases modern layout techniques using Flexbox and CSS Grid to create a clean, adaptable design that works seamlessly across desktop and mobile devices. The page includes structured product sections, banners, and a visually appealing layout—all without any JavaScript or external frameworks.
