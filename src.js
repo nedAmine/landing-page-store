@@ -3,6 +3,7 @@ const cart = []; // [{name, price, image, qty, favorite}]
 const cartSection = document.getElementById("shopping-cart");
 const cartOverlay = document.getElementById("cart-bg");
 const viewCartBtn = document.getElementById("viewCart");
+const viewCartMbBtn = document.getElementById("viewCart-mobile");
 const closeCartBtn = document.getElementById("close-cart");
 const cartNtf = document.getElementById("cart-ntf");
 
@@ -25,6 +26,10 @@ function hideCart() {
 
 // ---------- EVENTS OPEN / CLOSE ----------
 viewCartBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  showCart();
+});
+viewCartMbBtn.addEventListener("click", (e) => {
   e.preventDefault();
   showCart();
 });

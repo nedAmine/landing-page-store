@@ -94,11 +94,11 @@ section .infos .top {
     color: #262927;
 }
 
-#viewCart {
+#viewCart, #viewCart-mobile {
     cursor: pointer;
     position: relative;
 }
-#viewCart #cart-ntf {
+#viewCart #cart-ntf, #viewCart-mobile #cart-ntf{
     visibility: hidden;
     position: absolute;
     background-color: var(--cseco);
@@ -113,12 +113,17 @@ section .infos .top {
     align-items: center;
     transition: all 0.5s;
 }
-#viewCart #cart-ntf.show {
+#viewCart #cart-ntf.show, #viewCart-mobile #cart-ntf.show {
     visibility: visible;
 }
 #viewCart i {
     color: white;
     background-color: transparent;
+}
+#viewCart-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 .item span {
