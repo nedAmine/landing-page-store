@@ -6,6 +6,7 @@ const viewCartBtn = document.getElementById("viewCart");
 const viewCartMbBtn = document.getElementById("viewCart-mobile");
 const closeCartBtn = document.getElementById("close-cart");
 const cartNtf = document.getElementById("cart-ntf");
+const cartNtfMb = document.getElementById("cart-ntf-mobile");
 
 // ---------- INIT ----------
 window.addEventListener("DOMContentLoaded", () => {
@@ -94,6 +95,9 @@ function displayNotification(cart) {
     if (cart.length > 0){
         cartNtf.innerHTML = cart.length;
         cartNtf.classList.add("show");
+        
+        cartNtfMb.innerHTML = cart.length;
+        cartNtfMb.classList.add("show");
     }
 }
 
@@ -129,6 +133,8 @@ function renderCart() {
     totalContainer.innerHTML = "";
     cartNtf.classList.remove("show");
     cartNtf.innerHTML = 0;
+    cartNtfMb.classList.remove("show");
+    cartNtfMb.innerHTML = 0;
     return;
   }
 
